@@ -1,0 +1,27 @@
+.swiper-pagination-bullet-active {
+    @apply bg-orange-500;
+}
+
+
+.marquee {
+    display: flex;
+    animation: marquee 20s linear infinite;
+}
+    
+@keyframes marquee {
+    0% {
+    transform: translateX(0);
+    }
+    
+    100% {
+    transform: translateX(-100%);
+    }
+}
+
+@media (max-width: 768px) {
+    .swiper-button-next, 
+    .swiper-button-prev {
+        display: none !important;
+    }
+}
+
